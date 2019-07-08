@@ -1,0 +1,13 @@
+<html>
+    <title>Redirecting you</title>
+    <link rel="icon" href="https://lh5.googleusercontent.com/z_oeZyQyf0g_XGJkan7uBN_ou1iVcnDlFhRfmGjEFHQoVy6jOG2nF7Jba-3i2axXIwJg8F9nF41E7UbmhWFbXHuweP7iLPZaGw"/>
+    <h1>Redirecting you to <strong>www</strong>.heimsnet.eu/<span id="link"></span></h1>
+    <script>
+        document.onload = forward();
+        function forward() {
+            console.log("Detecting current URL, GOT "+window.location.href+window.location.pathname);
+            document.getElementById("link").innerHTML=window.location.pathname;
+            document.location.href="https://www.heimsnet.eu/"+window.location.pathname;
+        }
+    </script>
+</html>
